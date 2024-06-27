@@ -1,0 +1,152 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    
+}
+body{
+    font-family:"Poppins", sans-serif;
+}
+
+/* =================================start navBar=======================================  */
+
+nav{
+    background-color: rgb(243, 239, 224);
+}
+.container{
+    width: 1166px;
+    margin: 0 auto;
+    
+}
+
+.navWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navWrapper ul{
+    list-style: none;
+    display: flex;
+    gap: 100px;
+}
+.navWrapper ul li{
+    transition: .4s;
+    position: relative;
+}
+.navWrapper ul li:hover{
+    font-weight: 600;
+}
+.navWrapper ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: aqua;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.navWrapper ul li:hover::after{
+    width: 50%;    
+}
+
+/* =================================start navBar=======================================  */
+
+/* =================================start BannerSection=======================================  */
+
+.banner{
+    display: flex;
+    align-items: center;
+}
+.banner-text{
+    height: 378px;
+    width: 777px;
+}
+.banner-text h1{
+    height: 168px;
+    width: 777px;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 84px;
+    margin-bottom: 24px;
+}
+.banner-text p{
+    height: 60px;
+    width: 544px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 51px;
+}
+.search-inputBox{
+    position: relative;
+}
+#search-box{
+    width: 508px;
+    height: 70px;
+    border-radius: 15px;
+    background-color:#FFFFFF;
+    padding-left: 56px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+#search-box::placeholder{
+    font-size: 16px;
+    font-weight: 300;
+    
+}
+.fa-solid{
+    height: 20.17px;
+    width: 17.51px;
+ 
+    top: 24.5px;
+    left: 23.73px;
+}
+#search-btn{
+    width: 138px;
+    height: 70px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    margin-left: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+#search-btn::placeholder{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21px;
+    
+}
+.banner-image{
+    margin-top: 96px;
+    margin-bottom: 120px;
+    height: 522px;
+    width: 373px;
+}
+
+/* =================================end BannerSection=======================================  */
+
+/* =================================Start Properti======================================= */
+#properti h2{
+    font-size: 36px;
+    font-weight: 600px;
+    width: 533px;
+    color: #203239;
+}
+.properti_item{
+    width: 300px;
+}
+.properti_item h3{
+    font-size: 16px;
+    font-weight: 500px;
+    margin-bottom: 8px;
+}
+.properti_item p{
+    font-size: 16px;
+    font-weight: 300px;
+    margin-bottom: 78px;
+}
+/* =================================End Properti======================================= */
